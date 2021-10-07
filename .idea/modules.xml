@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Parking_Lot.iml" filepath="$PROJECT_DIR$/.idea/modules/Parking_Lot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Parking Lot/task/Parking_Lot.Parking_Lot-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Parking Lot/task/Parking_Lot.Parking_Lot-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Parking Lot/task/Parking_Lot.Parking_Lot-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Parking Lot/task/Parking_Lot.Parking_Lot-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Parking Lot/task/Parking_Lot.Parking_Lot-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Parking Lot/task/Parking_Lot.Parking_Lot-task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/Referential equality/Parking_Lot.Topics-Equality-Referential_equality.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/Referential equality/Parking_Lot.Topics-Equality-Referential_equality.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/Referential equality/Parking_Lot.Topics-Equality-Referential_equality.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/Referential equality/Parking_Lot.Topics-Equality-Referential_equality.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/Referential equality/Parking_Lot.Topics-Equality-Referential_equality.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/Referential equality/Parking_Lot.Topics-Equality-Referential_equality.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/Theory/Parking_Lot.Topics-Equality-Theory.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/Theory/Parking_Lot.Topics-Equality-Theory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/Theory/Parking_Lot.Topics-Equality-Theory.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/Theory/Parking_Lot.Topics-Equality-Theory.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/Theory/Parking_Lot.Topics-Equality-Theory.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/Theory/Parking_Lot.Topics-Equality-Theory.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/True captain/Parking_Lot.Topics-Equality-True_captain.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/True captain/Parking_Lot.Topics-Equality-True_captain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/True captain/Parking_Lot.Topics-Equality-True_captain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/True captain/Parking_Lot.Topics-Equality-True_captain.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Topics/Equality/True captain/Parking_Lot.Topics-Equality-True_captain.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Topics/Equality/True captain/Parking_Lot.Topics-Equality-True_captain.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Parking_Lot.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Parking_Lot.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Parking_Lot.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Parking_Lot.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Parking_Lot.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Parking_Lot.util.test.iml" />
+    </modules>
+  </component>
+</project>

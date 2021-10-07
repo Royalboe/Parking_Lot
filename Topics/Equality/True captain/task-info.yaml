@@ -1,0 +1,15 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    val captain = Pirate("Hector Barbossa")
+    println(captain.name) // Do not touch this line
+    // put your code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11244#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 07 Oct 2021 20:40:25 UTC
+record: -1
