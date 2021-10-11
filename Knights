@@ -1,0 +1,23 @@
+/*There are coordinates of two knights on the chessboard. Find out, whether they beat each other or not.
+Input data format
+
+Four integer numbers x_1, y_1, x_2, y_2x 
+Output data format
+
+Type "YES" (uppercase) if they beat each other and "NO" if they don't.*/
+
+
+
+
+import kotlin.math.*
+fun main() {
+    val (a1, b1) = readLine()!!.split(" ")
+    val (a2, b2) = readLine()!!.split(" ")
+    val x1 = a1.toInt()
+    val x2 = a2.toInt()
+    val y1 = b1.toInt()
+    val y2 = b2.toInt()
+    val c = abs(x1 - x2)
+    val d = abs(y1 - y2)
+    if (c == 1 && d == 2 || c == 2 && d == 1) println("YES") else println("NO")
+}
