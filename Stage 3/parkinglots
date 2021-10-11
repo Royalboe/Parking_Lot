@@ -1,0 +1,24 @@
+package parking
+
+fun main() {
+    val freeSpot = mutableListOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+
+    while (true) {
+        val cars = readLine()!!.split(" ")
+        when (cars[0]) {
+            "exit" -> break
+            "park" -> {
+                if (freeSpot.isNotEmpty()) {
+                    var freeSpot1 = freeSpot.sorted()
+                    println("${cars[2]} car parked in spot ${freeSpot1[0]}.")
+                    freeSpot.remove(freeSpot1[0])
+                } else println("Sorry, the parking lot is full.")
+            }
+            "leave" -> {
+                freeSpot.add(cars[1].toInt())
+                println("Spot ${cars[1]} is free.")
+            }
+
+        }
+    }
+}
