@@ -1,4 +1,4 @@
-val pirateJackSparrow = Sailor("None")
-val captainJackSparrow = Sailor("None") 
-// put your code here
-println(pirateJackSparrow === captainJackSparrow)
+fun main() {
+    val empty = ""
+    println(empty.isEmpty())
+}

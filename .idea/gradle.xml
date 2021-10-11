@@ -15,6 +15,16 @@
             <option value="$PROJECT_DIR$/Topics/Equality/Referential equality" />
             <option value="$PROJECT_DIR$/Topics/Equality/Theory" />
             <option value="$PROJECT_DIR$/Topics/Equality/True captain" />
+            <option value="$PROJECT_DIR$/Topics/Ranges/Between two numbers" />
+            <option value="$PROJECT_DIR$/Topics/Ranges/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Ranges/Within a range" />
+            <option value="$PROJECT_DIR$/Topics/Ranges/Within both ranges" />
+            <option value="$PROJECT_DIR$/Topics/When expression/Strings as objects" />
+            <option value="$PROJECT_DIR$/Topics/When expression/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Working with strings/N-th symbol" />
+            <option value="$PROJECT_DIR$/Topics/Working with strings/Name Card" />
+            <option value="$PROJECT_DIR$/Topics/Working with strings/The information about a person" />
+            <option value="$PROJECT_DIR$/Topics/Working with strings/Theory" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
