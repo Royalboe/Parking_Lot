@@ -3,20 +3,20 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/240918/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Mon, 11 Oct 2021 11:06:26 UTC
+update_date: Sat, 23 Oct 2021 18:37:55 UTC
 stages:
 - id: 416
   step: 6597
   is_completed: true
 - id: 417
   step: 6598
-  is_completed: false
+  is_completed: true
 - id: 418
   step: 6599
-  is_completed: false
+  is_completed: true
 - id: 419
   step: 6600
-  is_completed: false
+  is_completed: true
 - id: 420
   step: 6601
   is_completed: false
@@ -55,8 +55,6 @@ topics:
     theory_id: 8788
   - title: IDE
     theory_id: 10996
-  - title: Computer algorithms
-    theory_id: 4953
   - title: Intro to computational thinking
     theory_id: 8742
   - title: Components of computational thinking
@@ -65,18 +63,6 @@ topics:
     theory_id: 4472
   - title: Increment and decrement
     theory_id: 10776
-  - title: Ordering and total order
-    theory_id: 9253
-  - title: Ordering of compound objects
-    theory_id: 9457
-  - title: IntelliJ IDEA
-    theory_id: 3801
-  - title: IDEA Basics
-    theory_id: 5819
-  - title: EduTools
-    theory_id: 5839
-  - title: Functions
-    theory_id: 13884
   - title: Invoking functions
     theory_id: 4575
   - title: Standard input
@@ -103,6 +89,12 @@ topics:
     theory_id: 4625
   - title: Repeating blocks
     theory_id: 4643
+  - title: IntelliJ IDEA
+    theory_id: 3801
+  - title: IDEA Basics
+    theory_id: 5819
+  - title: EduTools
+    theory_id: 5839
   - title: Unicode
     theory_id: 7899
   - title: Characters
@@ -115,7 +107,7 @@ topics:
     theory_id: 4633
   - title: For loop and ranges
     theory_id: 4652
-  - title: Mutable list
+  - title: Introduction to MutableList
     theory_id: 14879
   - title: Work with MutableLists
     theory_id: 14902

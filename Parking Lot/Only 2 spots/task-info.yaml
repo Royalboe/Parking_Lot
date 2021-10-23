@@ -109,19 +109,5 @@ files:
 
   learner_created: false
 feedback_link: https://hyperskill.org/projects/75/stages/417/implement#comment
-status: Failed
-feedback:
-  message: |-
-    Wrong answer in test #1
-
-    Error in line 1: &quot;White car has parked.&quot; instead of &quot;White car parked in spot 2.&quot;. See example 1.
-
-    Please find below the output of your program during this failed test.
-
-    ---
-
-    White car has parked.
-    Yellow car left the parking lot.
-    Green car just parked here.
-  time: Thu, 07 Oct 2021 16:05:43 UTC
+status: Solved
 record: 2

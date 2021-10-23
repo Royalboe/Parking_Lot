@@ -1,6 +1,6 @@
+import org.hyperskill.hstest.stage.StageTest
 import org.hyperskill.hstest.testcase.CheckResult
 import org.hyperskill.hstest.testcase.TestCase
-import org.hyperskill.hstest.stage.StageTest
 
 
 /** Default testCase. */
@@ -28,10 +28,16 @@ open class InputClue(
     }
 }
 
+fun inputCase(
+        input: String,
+        isPrivate: Boolean = false,
+        hint: String? = null
+) = testCase(InputClue(input, isPrivate, hint), input)
+
 class OutputClue(input: String, val output: String, isPrivate: Boolean, hint: String?)
     : InputClue(input, isPrivate, hint) {
 
-    fun compareLines(reply: String) : CheckResult {
+    fun compareLines(reply: String): CheckResult {
         val hisLines = reply.trim().lines()
         val myLines = output.trim().lines()
 
@@ -43,8 +49,8 @@ class OutputClue(input: String, val output: String, isPrivate: Boolean, hint: St
         }
         // if all common lines are correct, but sizes are different.
         if (hisLines.size != myLines.size) {
-            return toFailure("Your output contains ${hisLines.size} lines " +
-                    "instead of ${myLines.size}.")
+            return toFailure("Your output contains ${hisLines.size} " +
+                    "lines instead of ${myLines.size}.")
         }
         return CheckResult.correct();
     }
@@ -57,30 +63,84 @@ fun outputCase(
         hint: String? = null
 ) = testCase(OutputClue(input, output, isPrivate, hint), input)
 
+/** Trim Starts of all lines and trim empty lines. */
+fun String.trimAllIndents() = this.lines()
+        .map { it.trimStart() }
+        .dropWhile { it.isBlank() }
+        .dropLastWhile { it.isBlank() }
+        .joinToString("\n")
 
 
-class Task2Test : StageTest<OutputClue>() {
+class Task4Test : StageTest<OutputClue>() {
 
     override fun generate() = listOf(
-            outputCase("park KA-01-HH-1234 White",
-                    "White car parked in spot 2.",
+            outputCase(
+                    """
+                        park KA-01-HH-9999 White
+                        create 3
+                        status
+                        park KA-01-HH-9999 White
+                        park KA-01-HH-3672 Green
+                        park Rs-P-N-21 Red
+                        leave 2
+                        status
+                        exit
+                    """.trimAllIndents(),
+                    """
+                        Sorry, a parking lot has not been created.
+                        Created a parking lot with 3 spots.
+                        Parking lot is empty.
+                        White car parked in spot 1.
+                        Green car parked in spot 2.
+                        Red car parked in spot 3.
+                        Spot 2 is free.
+                        1 KA-01-HH-9999 White
+                        3 Rs-P-N-21 Red
+            """.trimAllIndents(),
                     hint = "See example 1."),
+            outputCase(
+                    """
+                        park KA-01-HH-9999 White
+                        leave 1
+                        status
+                        exit
+                    """.trimAllIndents(),
+                    """
+                        Sorry, a parking lot has not been created.
+                        Sorry, a parking lot has not been created.
+                        Sorry, a parking lot has not been created.
+            """.trimAllIndents(),
+                    true,
+                    hint = "Check commands until the parking is created."),
+            outputCase(
+                    """
+                        create 3
+                        park KA-01-HH-9999 White
+                        park KA-01-HH-9998 Red
+                        status
+                        create 1
+                        status
+                        park KA-01-HH-9999 Black
+                        status
+                        park KA-01-HH-9998 Black
+                        exit
+                    """.trimAllIndents(),
+                    """
+                        Created a parking lot with 3 spots.
+                        White car parked in spot 1.
+                        Red car parked in spot 2.
+                        1 KA-01-HH-9999 White
+                        2 KA-01-HH-9998 Red
+                        Created a parking lot with 1 spots.
+                        Parking lot is empty.
+                        Black car parked in spot 1.
+                        1 KA-01-HH-9999 Black
+                        Sorry, the parking lot is full.
+            """.trimAllIndents(),
+                    true,
+                    hint = "Try to recreate the parking.")
 
-            outputCase("leave 1",
-                    "Spot 1 is free.",
-                    hint = "See example 2."),
 
-            outputCase("leave 2",
-                    "There is no car in spot 2.",
-                    hint = "See example 3."),
-
-            outputCase("park KA-01-HH-1234 Red",
-                    "Red car parked in spot 2.", true,
-                    hint = "Try to test another colors."),
-
-            outputCase("park 1ABC234 Blue",
-                    "Blue car parked in spot 2.", true,
-                    hint = "Try to test another registration numbers.")
     )
 
 

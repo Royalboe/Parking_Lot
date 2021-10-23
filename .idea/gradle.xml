@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="GRADLE" />
-        <option name="distributionType" value="WRAPPED" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="#JAVA_INTERNAL" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Parking Lot/task" />
+            <option value="$PROJECT_DIR$/Topics/Constructors/Pets" />
+            <option value="$PROJECT_DIR$/Topics/Constructors/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Declaring functions/Division" />
+            <option value="$PROJECT_DIR$/Topics/Declaring functions/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Declaring functions/Vowel or not" />
             <option value="$PROJECT_DIR$/Topics/Equality/Referential equality" />
             <option value="$PROJECT_DIR$/Topics/Equality/Theory" />
             <option value="$PROJECT_DIR$/Topics/Equality/True captain" />
@@ -19,6 +24,10 @@
             <option value="$PROJECT_DIR$/Topics/Ranges/Theory" />
             <option value="$PROJECT_DIR$/Topics/Ranges/Within a range" />
             <option value="$PROJECT_DIR$/Topics/Ranges/Within both ranges" />
+            <option value="$PROJECT_DIR$/Topics/When expression/FTN-Numbers" />
+            <option value="$PROJECT_DIR$/Topics/When expression/From string to a number" />
+            <option value="$PROJECT_DIR$/Topics/When expression/Harry Potter" />
+            <option value="$PROJECT_DIR$/Topics/When expression/Shape" />
             <option value="$PROJECT_DIR$/Topics/When expression/Strings as objects" />
             <option value="$PROJECT_DIR$/Topics/When expression/Theory" />
             <option value="$PROJECT_DIR$/Topics/Working with strings/N-th symbol" />
