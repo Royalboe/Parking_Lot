@@ -6,3 +6,8 @@ content:
 - Declaring functions
 - Constructors
 - Errors in programs
+- Taming exceptions
+- The try-catch statement
+- The try-catch-finally statement
+- Inheritance
+- toString()

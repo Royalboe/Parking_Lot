@@ -1,0 +1,25 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun main() {
+        val rooms = readLine()!!.toInt()
+        val price = readLine()!!.toInt()
+        val house = House(rooms, price)
+        println(totalPrice(house))
+    }
+
+    class House(val rooms: Int, val price: Int) { }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7775#comment
+status: Solved
+feedback:
+  message: |-
+    <html>[+] Test #1. OK
+    [+] Test #2. OK
+    [+] Test #3. OK
+
+    3 of 3 test(s) passed.</html>
+  time: Mon, 25 Oct 2021 18:58:56 UTC
+record: -1

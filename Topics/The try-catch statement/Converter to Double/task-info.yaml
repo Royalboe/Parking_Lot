@@ -1,0 +1,18 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun convertStringToDouble(input: String): Double {
+        /**
+        * It returns a double value or 0 if an exception occurred
+        */
+        return input.toDouble()
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10628#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sun, 24 Oct 2021 14:46:36 UTC
+record: -1

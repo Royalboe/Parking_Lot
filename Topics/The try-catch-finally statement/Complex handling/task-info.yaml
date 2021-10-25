@@ -1,0 +1,18 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: "import java.io.IOException\nimport java.lang.ArithmeticException\n\nfun suspiciousFunction\
+    \ (param: Int) {\n    when (param) {\n        0 -> throw Exception(\"Some exceptions?\"\
+    )\n        1 -> throw ArithmeticException(\"Division by zero\")\n        2 ->\
+    \ throw Exception(\"An exception occurred here\")\n        3 -> throw IOException()\n\
+    \    }\n}        \n\nfun handleException (data: Int) {\n\n    suspiciousFunction(data)\n\
+    \n}"
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11816#comment
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 4. Wrong answer
+  time: Sun, 24 Oct 2021 15:21:12 UTC
+record: -1

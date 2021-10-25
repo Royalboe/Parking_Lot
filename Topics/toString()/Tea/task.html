@@ -1,0 +1,18 @@
+<h2>Tea</h2>
+<html>
+ <head></head>
+ <body>
+  <p>Implement the class <code class="language-kotlin">BlackTea</code> which is inherited from the class <code class="language-kotlin">Tea</code>. The class should have a public constructor with two arguments, cost, and volume.</p> 
+  <p>To complete the task, override the <code class="language-kotlin">toString()</code> method; it should return the following string pattern:</p> 
+  <p><code class="language-kotlin">BlackTea{cost=val_cost, volume=val_volume}</code></p> 
+  <p>where <code class="language-kotlin">val_cost</code>, <code class="language-kotlin">val_volume</code> are the values of the class parameters.</p> 
+  <pre><code class="language-kotlin">open class Tea(val cost: Int, val volume: Int) {
+    override fun toString(): String {
+        return "Tea{cost=$cost, volume=$volume}"
+    }
+}</code></pre>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">2 300</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">BlackTea{cost=2, volume=300}</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>
+<b>Caution</b><br><br>
+You may see errors in your code or execution results due to missing context. Don’t worry about it, just write the solution and press Check.
+<br><br>

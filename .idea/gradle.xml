@@ -20,10 +20,26 @@
             <option value="$PROJECT_DIR$/Topics/Equality/Referential equality" />
             <option value="$PROJECT_DIR$/Topics/Equality/Theory" />
             <option value="$PROJECT_DIR$/Topics/Equality/True captain" />
+            <option value="$PROJECT_DIR$/Topics/Errors in programs/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Errors in programs/What's wrong" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Cart" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/House inheritance" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Theory" />
             <option value="$PROJECT_DIR$/Topics/Ranges/Between two numbers" />
             <option value="$PROJECT_DIR$/Topics/Ranges/Theory" />
             <option value="$PROJECT_DIR$/Topics/Ranges/Within a range" />
             <option value="$PROJECT_DIR$/Topics/Ranges/Within both ranges" />
+            <option value="$PROJECT_DIR$/Topics/Taming exceptions/Handle arithmetic exception" />
+            <option value="$PROJECT_DIR$/Topics/Taming exceptions/Handle number format exception" />
+            <option value="$PROJECT_DIR$/Topics/Taming exceptions/Handle string exception" />
+            <option value="$PROJECT_DIR$/Topics/Taming exceptions/Theory" />
+            <option value="$PROJECT_DIR$/Topics/The try-catch statement/Converter to Double" />
+            <option value="$PROJECT_DIR$/Topics/The try-catch statement/Exception message" />
+            <option value="$PROJECT_DIR$/Topics/The try-catch statement/Handling strings" />
+            <option value="$PROJECT_DIR$/Topics/The try-catch statement/Integer division" />
+            <option value="$PROJECT_DIR$/Topics/The try-catch statement/Theory" />
+            <option value="$PROJECT_DIR$/Topics/The try-catch-finally statement/Complex handling" />
+            <option value="$PROJECT_DIR$/Topics/The try-catch-finally statement/Theory" />
             <option value="$PROJECT_DIR$/Topics/When expression/FTN-Numbers" />
             <option value="$PROJECT_DIR$/Topics/When expression/From string to a number" />
             <option value="$PROJECT_DIR$/Topics/When expression/Harry Potter" />
@@ -34,6 +50,8 @@
             <option value="$PROJECT_DIR$/Topics/Working with strings/Name Card" />
             <option value="$PROJECT_DIR$/Topics/Working with strings/The information about a person" />
             <option value="$PROJECT_DIR$/Topics/Working with strings/Theory" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Tea" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Theory" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
