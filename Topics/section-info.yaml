@@ -11,3 +11,4 @@ content:
 - The try-catch-finally statement
 - Inheritance
 - toString()
+- Data class

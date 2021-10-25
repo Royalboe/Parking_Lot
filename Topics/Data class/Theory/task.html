@@ -1,0 +1,67 @@
+<h2>Data class</h2>
+<html>
+ <head></head>
+ <body>
+  <p>How to make a simple class for storing data? In addition to storing information, it should be able to compare and copy objects. Also, it would be very convenient to output data immediately. Normally, for this functionality the class must have some methods: <code class="language-kotlin">equals()</code> and <code class="language-kotlin">hashCode()</code> for comparison, <code class="language-kotlin">copy()</code> for copying, and <code class="language-kotlin">toString()</code> for the string representation of the object. But in Kotlin you don't need to implement all of these functions, you can simply use the <strong>data class</strong>. Let’s take a closer look at this type of class.</p> 
+  <h5 style="text-align: center;">Data class</h5> 
+  <p>First of all, we need a class, so here is a nice <code class="language-kotlin">Client</code> class:</p> 
+  <pre><code class="language-kotlin">class Client(val name: String, val age: Int, val gender: String)</code></pre> 
+  <p>Right now it has 3 properties, so far so good! But in order to properly compare the objects (i.e., by their properties) we need to implement <code class="language-kotlin">equals()</code><strong> </strong>and <code class="language-kotlin">hashCode()</code> functions:</p> 
+  <pre><code class="language-kotlin">class Client(val name: String, val age: Int, val gender: String) {
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Client
+
+        if (name != other.name) return false
+        if (age != other.age) return false
+        if (gender != other.gender) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = name.hashCode()
+        result = 31 * result + age
+        result = 31 * result + gender.hashCode()
+        return result
+    }
+}</code></pre> 
+  <p>Why do we need such a long piece of code just for standard stuff? That's the right question because with the data class we can simplify it like this:</p> 
+  <pre><code class="language-kotlin">data class Client(val name: String, val age: Int, val gender: String)</code></pre> 
+  <p>Wait! Where are all my functions now? Actually, with the<strong> </strong><code class="language-kotlin">data</code> keyword, you don't need them anymore. It will magically work as if you have already implemented them all. This keyword will also provide <code class="language-kotlin">toString()</code> and <code class="language-kotlin">copy()</code> functions with default behavior. We'll look at <code class="language-kotlin">copy()</code> a bit later, but right now you need to remember several rules here:</p> 
+  <p>1. You can only count on properties that are inside the constructor. For example, this modified <code class="language-kotlin">Client</code> class:</p> 
+  <pre><code class="language-kotlin">data class Client(val name: String, val age: Int, val gender: String) {
+    var balance: Int = 0
+}</code></pre> 
+  <p>All those functions won't consider <code class="language-kotlin">balance</code> field, because it isn't inside the constructor.</p> 
+  <p> 2. You can override all those functions, except for <code class="language-kotlin">copy()</code>:</p> 
+  <pre><code class="language-kotlin">data class Client(val name: String, val age: Int, val gender: String) {
+    var balance: Int = 0
+
+    override fun toString(): String {
+        return "Client(name='$name', age=$age, gender='$gender', balance=$balance)"
+    }
+
+}</code></pre> 
+  <p>Now <code class="language-kotlin">balance</code> field is involved in the <code class="language-kotlin">toString()</code> function.</p> 
+  <p>3. The primary constructor of a data class must have at least one parameter and all of those parameters must be <code class="language-kotlin">val</code> or <code class="language-kotlin">var</code>.</p> 
+  <h5 style="text-align: center;">Copy</h5> 
+  <p>To be honest, there isn't really a convenient way to copy an object in Java, but Kotlin is different. For example, what if we have an instance of our <code class="language-kotlin">Client</code> class and we want the exact same client, just with a different name? Easy!</p> 
+  <pre><code class="language-kotlin">fun main() {
+    val bob = Client("Bob", 29, "Male")
+    val john = bob.copy(name = "John")
+    println(bob)
+    println(john)
+}</code></pre> 
+  <p>As you may see, we just used our <code class="language-kotlin">copy()</code> function, which will be provided automatically with the <code class="language-kotlin">data</code> keyword. And the output will be the following:</p> 
+  <pre><code class="language-kotlin">Client(name='Bob', age=29, gender='Male', balance=0)
+Client(name='John', age=29, gender='Male', balance=0)</code></pre> 
+  <h5 style="text-align: center;">Idiom</h5> 
+  <p>As we've demonstrated, the data class is a convenient way to organize data. So use it, with <a target="_blank" href="https://kotlinlang.org/docs/idioms.html#create-dtos-pojos-pocos" rel="noopener noreferrer nofollow">community approval</a>!</p> 
+  <pre><code class="language-kotlin">data class Customer(val name: String, val email: String)</code></pre> 
+  <h5 style="text-align: center;">Conclusion</h5> 
+  <p>Now you know how to simplify boilerplate code with the <code class="language-kotlin">data</code> keyword. It helps not only to shorten your code but also to save your time. Use it wisely!</p>
+ </body>
+</html>

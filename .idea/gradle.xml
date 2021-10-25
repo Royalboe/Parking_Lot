@@ -14,6 +14,10 @@
             <option value="$PROJECT_DIR$/Parking Lot/task" />
             <option value="$PROJECT_DIR$/Topics/Constructors/Pets" />
             <option value="$PROJECT_DIR$/Topics/Constructors/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Data class/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Data class/copy() usage" />
+            <option value="$PROJECT_DIR$/Topics/Data class/equals() check" />
+            <option value="$PROJECT_DIR$/Topics/Data class/toString() modification" />
             <option value="$PROJECT_DIR$/Topics/Declaring functions/Division" />
             <option value="$PROJECT_DIR$/Topics/Declaring functions/Theory" />
             <option value="$PROJECT_DIR$/Topics/Declaring functions/Vowel or not" />
@@ -50,8 +54,11 @@
             <option value="$PROJECT_DIR$/Topics/Working with strings/Name Card" />
             <option value="$PROJECT_DIR$/Topics/Working with strings/The information about a person" />
             <option value="$PROJECT_DIR$/Topics/Working with strings/Theory" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Latte" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Number of cups" />
             <option value="$PROJECT_DIR$/Topics/toString()/Tea" />
             <option value="$PROJECT_DIR$/Topics/toString()/Theory" />
+            <option value="$PROJECT_DIR$/Topics/toString()/User Information" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

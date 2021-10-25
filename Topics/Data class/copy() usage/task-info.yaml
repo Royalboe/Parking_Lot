@@ -1,0 +1,19 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    // do not change this data class
+    data class Box(val height: Int, val length: Int, val width: Int)
+
+    fun main() {
+        // implement your code here
+
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8533#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 25 Oct 2021 20:34:26 UTC
+record: -1

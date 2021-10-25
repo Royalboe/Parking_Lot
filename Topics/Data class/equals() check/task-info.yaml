@@ -1,0 +1,17 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    data class Client(val name: String, val age: Int, val balance: Int)
+
+    fun main() {
+        //implement your code here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8534#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 25 Oct 2021 20:28:09 UTC
+record: -1

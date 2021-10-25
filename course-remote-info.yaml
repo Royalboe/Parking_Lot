@@ -19,7 +19,7 @@ stages:
   is_completed: true
 - id: 420
   step: 6601
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Units of information

@@ -1,0 +1,14 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: "class CustomerInfo(\n        /** Unique user id */\n        val uid: String,\n\
+    \        /** Operation system: Windows, Linux, macOS, iOS */\n        val operationSystem:\
+    \ String,\n        /** In GB */\n        val ram: Int,\n        /** In GHz */\n\
+    \        val coreSpeed: Double,\n        val timeStamp: Long\n    ) {\n\n    //put\
+    \ your code here  \n}\n\nfun sendCustomerInfoToServer(customer: CustomerInfo)\
+    \ {\n    Server.send(customer.toString())\n}"
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10202#comment
+status: Solved
+record: -1

@@ -14,6 +14,9 @@ fun main() {
                 spots = firstInput[1].toInt()
                 createLot(lot, spots)
             }
+            "spot_by_color" -> println(message)
+            "spot_by_reg" -> println(message)
+            "reg_by_color" -> println(message)
         }
         while (true) {
             val cars = readLine()!!.split(" ")
@@ -26,7 +29,61 @@ fun main() {
                     createLot(lot, spots)
                 }
                 "status" -> checkStatus(lot)
+                "spot_by_color" -> spotByColor(lot, cars)
+                "spot_by_reg" -> spotByReg(lot, cars)
+                "reg_by_color" -> regByColor(lot, cars)
             }
+        }
+    }
+}
+
+fun regByColor(lot: ParkingLot, cars: List<String>) {
+    val regColors = mutableListOf<String>()
+    if (lot.freeSpots.isEmpty() && lot.parkedCars.isEmpty()) {
+        println(message)
+    } else if (lot.parkedCars.isNotEmpty()) {
+        for (index in lot.parkedCars.indices) {
+            if (lot.parkedCars[index].split(" ")[2].contains(cars[1], true)) {
+                regColors.add(lot.parkedCars[index].split(" ")[1])
+            }
+        }
+        if (regColors.isEmpty()) println("No cars with color ${cars[1]} were found.") else {
+            println(regColors.joinToString(", "))
+            regColors.clear()
+        }
+    }
+}
+
+fun spotByReg(lot: ParkingLot, cars: List<String>) {
+    val regSpots = mutableListOf<Char>()
+    if (lot.freeSpots.isEmpty() && lot.parkedCars.isEmpty()) {
+        println(message)
+    } else if (lot.parkedCars.isNotEmpty()) {
+        for (index in lot.parkedCars.indices) {
+            if (lot.parkedCars[index].split(" ")[1].contains(cars[1], true)) {
+                regSpots.add(lot.parkedCars[index][0])
+            }
+        }
+        if (regSpots.isEmpty()) println("No cars with registration number ${cars[1]} were found.") else {
+            println(regSpots.joinToString(", "))
+            regSpots.clear()
+        }
+    }
+}
+
+fun spotByColor(lot: ParkingLot, cars: List<String>) {
+    val colorSpots = mutableListOf<Char>()
+    if (lot.freeSpots.isEmpty() && lot.parkedCars.isEmpty()) {
+        println(message)
+    } else if (lot.parkedCars.isNotEmpty()) {
+        for (index in lot.parkedCars.indices) {
+            if (lot.parkedCars[index].split(" ")[2].contains(cars[1], true)) {
+                colorSpots.add(lot.parkedCars[index][0])
+            }
+        }
+        if (colorSpots.isEmpty()) println("No cars with color ${cars[1]} were found.") else {
+            println(colorSpots.joinToString(", "))
+            colorSpots.clear()
         }
     }
 }
